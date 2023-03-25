@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/thyme/device.mk)
 
 # Inherit common ArrowOS configurations
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_thyme
+PRODUCT_NAME := aosp_thyme
 PRODUCT_DEVICE := thyme
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2102J2SC
